@@ -15,6 +15,7 @@ export class FormsComponent implements OnInit {
   customer: Customer = new Customer();
   submitted = false;
   warn:boolean=true;
+  link:boolean=false;
 
 
 
@@ -46,6 +47,7 @@ export class FormsComponent implements OnInit {
     this.save();
     this.alert=true;
     this.warn=false;
+    this.link = true;
   }
 
 closeAlert(){

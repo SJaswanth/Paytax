@@ -55,7 +55,7 @@
           </div>
           <nav class="d-flex aic">
               <a href="http://localhost:4200/sign-in" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
-              <a href="http://localhost:4200/sign-up" class="login"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign-up</a>
+              <ng-template [ngIf] = "link"><a href="http://localhost:4200/sign-up" class="login"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign-up</a></ng-template>
 
               <ul class="nav social d-none d-md-flex">
                   <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
