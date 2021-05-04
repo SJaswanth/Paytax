@@ -60,6 +60,9 @@ import { ServicesPageComponent } from './components/services-page/services-page.
 import {CreateCustomerDeductionComponent} from './customers/section80c-deduction/create-customer-deduction/create-customer-deduction.component';
 import {CustomerDetailsDeductionComponent} from './customers/section80c-deduction/customer-details-deduction/customer-details-deduction.component';
 import {CustomersListDeductionComponent} from './customers/section80c-deduction/customers-list-deduction/customers-list-deduction.component';
+import { FormProfileListComponent } from './forms/form-profile-list/form-profile-list.component';
+import { FormsProfileComponent } from './forms/form-profile/forms-profile.component';
+import { FormsComponent } from './forms/forms/forms.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -93,7 +96,10 @@ import {CustomersListDeductionComponent} from './customers/section80c-deduction/
     ServicesPageComponent,
     CreateCustomerDeductionComponent,
     CustomerDetailsDeductionComponent,
-    CustomersListDeductionComponent
+    CustomersListDeductionComponent,
+    FormsComponent,
+    FormsProfileComponent,
+   FormProfileListComponent
 
   ],
   imports: [

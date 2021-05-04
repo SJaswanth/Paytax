@@ -1,0 +1,20 @@
+<div *ngIf="customer">
+
+
+              <h1>Hello: <strong>{{customer.name}}</strong></h1>
+
+              <p>Email: <strong>{{customer.email}}</strong></p>
+
+              <div class="media-body">
+                <button style="margin-bottom: 15pc;"(click)="uploadImage()">Upload Image</button>
+
+              <img style="margin-bottom: 10pc;"style="margin-left: 20pc;"class="rounded-circle" width="300" height="300" [src]="urllink">
+              <input style="margin-bottom: 10pc;"type="file" class="" (change)="upload($event)"  (change)="selectFile($event)">
+
+              </div>
+          </div>
+
+
+
+
+
