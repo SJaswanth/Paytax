@@ -40,7 +40,11 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+<<<<<<< HEAD
 jashu
+=======
+jashus
+>>>>>>> f7511b2fa1dc6a17acbd8ab50cab3b5d5bc9a4fc
 
 # System Files
 .DS_Store

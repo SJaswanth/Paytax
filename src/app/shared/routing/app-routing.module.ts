@@ -32,7 +32,7 @@ import {CustomersListDeductionComponent} from '../../customers/section80c-deduct
 import { FormProfileListComponent } from './../../forms/form-profile-list/form-profile-list.component';
 import { FormsComponent } from './../../forms/forms/forms.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/company-page', pathMatch: 'full'},
+  { path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path:'home-page',component:CompanyPageComponent},
   { path: 'sign-in', component: SignInComponent},
   { path: 'sign-up', component: SignUpComponent},
