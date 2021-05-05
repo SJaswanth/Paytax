@@ -8,7 +8,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignInComponent } from '../../components/sign-in/sign-in.component';
 import { SignUpComponent } from '../../components/sign-up/sign-up.component';
-// import{FormComponent} from 'src/app/components/form/form.component'
+import{FormComponent} from 'src/app/components/form/form.component'
 
 import { DashboardComponent } from '../../components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from '../../components/forgot-password/forgot-password.component';
@@ -17,7 +17,7 @@ import { CreateCustomerComponent } from '../../customers/create-customer/create-
 import { CustomersListComponent } from '../../customers/customers-list/customers-list.component';
 import {CustomersList80DComponent} from '../../customers-80d/customers-list80d/customers-list80d.component'
 import {TaxComponent } from '../../customers/tax/tax.component';
-// import{UserprofileComponent} from '../../components/userprofile/userprofile.component';
+import{UserprofileComponent} from '../../components/userprofile/userprofile.component';
 import{SectionComponent} from '../../components/section/section.component';
 import {recomComponent} from  '../../components/recom-form/recom-form.component';
 import { AuthGuard } from "../../shared/guard/auth.guard";
@@ -45,8 +45,8 @@ const routes: Routes = [
   {path:'reports-ccd',component:CustomersList80CCDComponent},
   { path: 'add', component: CreateCustomerComponent },
   { path: 'tax', component: TaxComponent },
-  // { path: 'register-form', component: FormComponent },
-  // {path:'profile',component:UserprofileComponent},
+  { path: 'register-form', component: FormComponent },
+  {path:'profile',component:UserprofileComponent},
   {path:'section',component:SectionComponent},
  {path: 'recom-form',component:recomComponent},
 {path:'dropdown',component:DropdownComponent},

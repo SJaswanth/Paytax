@@ -45,8 +45,8 @@ import { CreateCustomer80DComponent } from './customers-80d/create-customer80d/c
 import { CustomersList80DComponent } from './customers-80d/customers-list80d/customers-list80d.component';
 import {CustomerDetails80DComponent} from './customers-80d/customer-details80d/customer-details80d.component';
 import { TaxComponent } from './customers/tax/tax.component';
-// import { FormComponent } from './components/form/form.component';
-// import { UserprofileComponent } from './components/userprofile/userprofile.component';
+import { FormComponent } from './components/form/form.component';
+import { UserprofileComponent } from './components/userprofile/userprofile.component';
 import { SectionComponent } from './components/section/section.component';
 import { Section80CCDComponent } from './components/section80-ccd/section80-ccd.component';
 import { SectionDComponent } from './components/section-d/section-d.component';
@@ -77,8 +77,8 @@ import { FormsComponent } from './forms/forms/forms.component';
     CustomersListComponent,
     CreateCustomerComponent,
     TaxComponent,
-    // FormComponent,
-    // UserprofileComponent,
+    FormComponent,
+    UserprofileComponent,
     SectionComponent,
     Section80CCDComponent,
     recomComponent,
