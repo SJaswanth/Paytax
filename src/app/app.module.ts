@@ -63,6 +63,7 @@ import {CustomersListDeductionComponent} from './customers/section80c-deduction/
 import { FormProfileListComponent } from './forms/form-profile-list/form-profile-list.component';
 import { FormsProfileComponent } from './forms/form-profile/forms-profile.component';
 import { FormsComponent } from './forms/forms/forms.component';
+import {ContactFormComponent} from './components/contact-form/contact-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -99,7 +100,8 @@ import { FormsComponent } from './forms/forms/forms.component';
     CustomersListDeductionComponent,
     FormsComponent,
     FormsProfileComponent,
-   FormProfileListComponent
+   FormProfileListComponent,
+   ContactFormComponent
 
   ],
   imports: [

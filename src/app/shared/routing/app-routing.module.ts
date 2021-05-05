@@ -31,6 +31,7 @@ import {CreateCustomerDeductionComponent} from '../../customers/section80c-deduc
 import {CustomersListDeductionComponent} from '../../customers/section80c-deduction/customers-list-deduction/customers-list-deduction.component';
 import { FormProfileListComponent } from './../../forms/form-profile-list/form-profile-list.component';
 import { FormsComponent } from './../../forms/forms/forms.component';
+import {ContactFormComponent} from 'src/app/components/contact-form/contact-form.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full'},
   {path:'home-page',component:CompanyPageComponent},
@@ -58,7 +59,8 @@ const routes: Routes = [
 {path:'adddeduction',component:CreateCustomerDeductionComponent},
 {path:'reportc-deduction',component:CustomersListDeductionComponent},
 {path:'forms',component:FormsComponent},
-{path:'user',component:FormProfileListComponent}
+{path:'user',component:FormProfileListComponent},
+{path:'contact-form',component:ContactFormComponent}
 ];
 
 @NgModule({

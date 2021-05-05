@@ -82,6 +82,15 @@ export class AuthService {
     })
   }
 
+  ContactForm(queryEmail: any,message:any) {
+    return this.afAuth.sendPasswordResetEmail(queryEmail,message)
+    .then(() => {
+      window.alert('query email has sent, developer will get back to in 2 working');
+    }).catch((error) => {
+      window.alert(error)
+    })
+  }
+
   // Returns true when user is looged in and email is verified
   get isLoggedIn(): boolean {
     const user = localStorage.getItem('user');

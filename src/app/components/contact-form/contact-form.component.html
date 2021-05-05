@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+  </head>
+  <body>
+<div class="card login-form">
+<div class="card-body">
+<h3 class="card-title text-center">Contact Form</h3>
+<div class="card-text">
+<form>
+   <div class="form-group">
+			<label for="exampleInputEmail1">Enter your devloper email address and we will send a mail to him</label>		
+				<input type="email" class="form-control form-control-sm" placeholder="Enter your email address" #queryEmail required>
+				<!-- <input type="text" class="form-control form-control-sm" placeholder="Enter your query and email" #message required> -->
+				</div>
+	<button type="submit" class="btn btn-primary btn-block" (click)=authService.ContactForm(queryEmail.value)>SEND</button>
+        <div class="redirectToLogin">
+          <span>Go back to ?<a class="redirect" routerLink="/home-page">home page</a></span>
+        </div>
+
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
