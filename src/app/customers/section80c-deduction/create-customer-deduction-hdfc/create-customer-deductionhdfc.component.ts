@@ -5,11 +5,11 @@ import { Customer } from '../../customer';
 import { CustomerService } from '../../customer.service';
 
 @Component({
-  selector: 'app-create-customer-deduction',
-  templateUrl: './create-customer-deduction.component.html',
-  styleUrls: ['./create-customer-deduction.component.css']
+  selector: 'app-create-customer-deductionhdfc',
+  templateUrl: './create-customer-deductionhdfc.component.html',
+  styleUrls: ['./create-customer-deductionhdfc.component.css']
 })
-export class CreateCustomerDeductionComponent implements OnInit {
+export class CreateCustomerDeductionhdfcComponent implements OnInit {
 
 
   customer: Customer = new Customer();
@@ -27,7 +27,7 @@ export class CreateCustomerDeductionComponent implements OnInit {
 
   ngOnInit():void{
 
-    this.customer.LifeInsurancePremium = 50000;
+    this.customer.LifeInsurancePremium = 30000;
   }
 
 

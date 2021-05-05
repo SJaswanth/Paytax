@@ -1,3 +1,5 @@
+import { CreateCustomerDeductionbarodaComponent } from './customers/section80c-deduction/create-customer-deduction-baroda/create-customer-deductionbaroda.component';
+import { CreateCustomerDeductionhdfcComponent } from './customers/section80c-deduction/create-customer-deduction-hdfc/create-customer-deductionhdfc.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -101,7 +103,9 @@ import {ContactFormComponent} from './components/contact-form/contact-form.compo
     FormsComponent,
     FormsProfileComponent,
    FormProfileListComponent,
-   ContactFormComponent
+   ContactFormComponent,
+   CreateCustomerDeductionhdfcComponent,
+   CreateCustomerDeductionbarodaComponent
 
   ],
   imports: [

@@ -64,7 +64,7 @@
   <!-- <button type="submit" class="btn btn-primary butt"  (click) ="getVal(box.value)">Submit</button> -->
   <br>
   <br>
-  <ng-template [ngIf]="currentVal >= 0 && currentVal < 250000">
+  <ng-template [ngIf]="currentVal >= 0 && currentVal < 250000" >
 
     <a href="http://localhost:4200/section" class="btn-warning"> Or Other Sections</a>
    <hr>
@@ -74,7 +74,7 @@
     <p class="btn-success">Saved Tax:- 0</p>
   </ng-template>
   <ng-template [ngIf]="currentVal >=250000 && currentVal < 500000">
-    <a  href="http://localhost:4200/add">Baroda</a><br>
+    <button class="btn btn-success"  routerLink="/add-deduction-baroda">Bank of Baroda</button>
 
     <div id="carouselExampleIndicators"
     class="carousel slide" data-ride="carousel"
@@ -103,8 +103,8 @@
     <p class="btn-success">Saved Tax:- {{((currentVal-basicexemption)*0.05)-PayableTax}}
       <!-- {{ ((currentVal-basicexemption)*0.05)- ((currentVal-deduction) - basicexemption)*0.05}}</p> -->
   </ng-template>
-  <ng-template [ngIf]="currentVal >=500000 && currentVal < 750000">
-    <a  href="http://localhost:4200/add">HDFC</a><br>
+  <ng-template  [ngIf]="currentVal >=500000 && currentVal < 750000">
+    <button class="btn btn-success"  routerLink="/add-deduction-hdfc">HDFC</button>
 
     <div id="carouselExampleIndicators"
     class="carousel slide" data-ride="carousel"
@@ -135,7 +135,7 @@
 
   </ng-template>
   <ng-template [ngIf]="currentVal >=750000 && currentVal < 1000000">
-    <button class="btn btn-success"  routerLink="/adddeduction">State Bank of India</button>
+    <button class="btn btn-success"  routerLink="/add-deduction">State Bank of India</button>
 
     <div id="carouselExampleIndicators"
     class="carousel slide" data-ride="carousel"

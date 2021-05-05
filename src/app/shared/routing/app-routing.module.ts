@@ -1,3 +1,5 @@
+import { CreateCustomerDeductionbarodaComponent } from './../../customers/section80c-deduction/create-customer-deduction-baroda/create-customer-deductionbaroda.component';
+import { CreateCustomerDeductionhdfcComponent } from './../../customers/section80c-deduction/create-customer-deduction-hdfc/create-customer-deductionhdfc.component';
 import { ServicesPageComponent } from './../../components/services-page/services-page.component';
 import { AboutUsComponent } from './../../components/about-us/about-us.component';
 
@@ -56,11 +58,13 @@ const routes: Routes = [
 {path:'about-us',component:AboutUsComponent},
 {path:'help',component:HelpComponent},
 {path:'services',component:ServicesPageComponent},
-{path:'adddeduction',component:CreateCustomerDeductionComponent},
+{path:'add-deduction',component:CreateCustomerDeductionComponent},
 {path:'reportc-deduction',component:CustomersListDeductionComponent},
 {path:'forms',component:FormsComponent},
 {path:'user',component:FormProfileListComponent},
-{path:'contact-form',component:ContactFormComponent}
+{path:'contact-form',component:ContactFormComponent},
+{path:'add-deduction-hdfc',component:CreateCustomerDeductionhdfcComponent},
+{path:'add-deduction-baroda',component:CreateCustomerDeductionbarodaComponent}
 ];
 
 @NgModule({
