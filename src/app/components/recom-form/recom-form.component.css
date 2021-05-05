@@ -47,6 +47,10 @@ label {
   width: 140px;
 }
 
+.navbar-brand{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
 
 
 #testimonials {
