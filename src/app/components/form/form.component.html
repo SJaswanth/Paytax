@@ -55,7 +55,7 @@
           </div>
           <nav class="d-flex aic">
               <a href="http://localhost:4200/sign-in" class="login"><i class="fa fa-user" aria-hidden="true"></i>Login</a>
-              <a href="http://localhost:4200/sign-up" class="login"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign-up</a>
+              <ng-template [ngIf] = "link"><a href="http://localhost:4200/sign-up" class="login"><i class="fa fa-user-plus" aria-hidden="true"></i>Sign-up</a></ng-template>
 
               <ul class="nav social d-none d-md-flex">
                   <li><a href="https://www.facebook.com/fh5co" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -97,7 +97,8 @@
 <br>
 <br>
 <br>
-
+<div class="wrapper fadeInDown">
+  <div id="formContent">
 <main class="my-form">
     <div class="cotainer">
         <div class="row justify-content-center">
@@ -209,7 +210,7 @@
                                       </div>
                                 </div>
                                 <div *ngIf="alert" class="alert alert-success alert-dismissible fade show dist" style="text-align: center;" role="alert">
-                                  <strong >Success!</strong> You have Registered successfully.
+                                  <strong >Success!</strong> You have Registered successfully please sign-up.
                                   <button (click) ="closeAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                   </button>
@@ -230,9 +231,11 @@
             </div>
         </div>
     </div>
-    
+
 </main>
 
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
