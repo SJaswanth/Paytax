@@ -10,7 +10,7 @@ import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SignInComponent } from '../../components/sign-in/sign-in.component';
 import { SignUpComponent } from '../../components/sign-up/sign-up.component';
-import{FormComponent} from 'src/app/components/form/form.component'
+import{FormComponent} from 'src/app/components/form/form.component';
 
 import { DashboardComponent } from '../../components/dashboard/dashboard.component';
 import { ForgotPasswordComponent } from '../../components/forgot-password/forgot-password.component';
