@@ -28,6 +28,7 @@ export class CreateCustomerDeductionComponent implements OnInit {
   ngOnInit():void{
 
     this.customer.LifeInsurancePremium = 50000;
+
   }
 
 

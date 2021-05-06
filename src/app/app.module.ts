@@ -62,9 +62,9 @@ import { ServicesPageComponent } from './components/services-page/services-page.
 import {CreateCustomerDeductionComponent} from './customers/section80c-deduction/create-customer-deduction/create-customer-deduction.component';
 import {CustomerDetailsDeductionComponent} from './customers/section80c-deduction/customer-details-deduction/customer-details-deduction.component';
 import {CustomersListDeductionComponent} from './customers/section80c-deduction/customers-list-deduction/customers-list-deduction.component';
-import { FormProfileListComponent } from './forms/form-profile-list/form-profile-list.component';
-import { FormsProfileComponent } from './forms/form-profile/forms-profile.component';
-import { FormsComponent } from './forms/forms/forms.component';
+// import { FormProfileListComponent } from './forms/form-profile-list/form-profile-list.component';
+// import { FormsProfileComponent } from './forms/form-profile/forms-profile.component';
+// import { FormsComponent } from './forms/forms/forms.component';
 import {ContactFormComponent} from './components/contact-form/contact-form.component';
 @NgModule({
   declarations: [
@@ -100,9 +100,9 @@ import {ContactFormComponent} from './components/contact-form/contact-form.compo
     CreateCustomerDeductionComponent,
     CustomerDetailsDeductionComponent,
     CustomersListDeductionComponent,
-    FormsComponent,
-    FormsProfileComponent,
-   FormProfileListComponent,
+    // FormsComponent,
+    // FormsProfileComponent,
+  //  FormProfileListComponent,
    ContactFormComponent,
    CreateCustomerDeductionhdfcComponent,
    CreateCustomerDeductionbarodaComponent

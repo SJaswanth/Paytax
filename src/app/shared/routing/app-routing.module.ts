@@ -31,8 +31,8 @@ import {CustomersList80CCDComponent} from './../../customers-80ccd/customers-lis
 import {HelpComponent} from './../../components/Help/Help/help.component';
 import {CreateCustomerDeductionComponent} from '../../customers/section80c-deduction/create-customer-deduction/create-customer-deduction.component';
 import {CustomersListDeductionComponent} from '../../customers/section80c-deduction/customers-list-deduction/customers-list-deduction.component';
-import { FormProfileListComponent } from './../../forms/form-profile-list/form-profile-list.component';
-import { FormsComponent } from './../../forms/forms/forms.component';
+// import { FormProfileListComponent } from './../../forms/form-profile-list/form-profile-list.component';
+// import { FormsComponent } from './../../forms/forms/forms.component';
 import {ContactFormComponent} from 'src/app/components/contact-form/contact-form.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full'},
@@ -60,8 +60,8 @@ const routes: Routes = [
 {path:'services',component:ServicesPageComponent},
 {path:'add-deduction',component:CreateCustomerDeductionComponent},
 {path:'reportc-deduction',component:CustomersListDeductionComponent},
-{path:'forms',component:FormsComponent},
-{path:'user',component:FormProfileListComponent},
+// {path:'forms',component:FormsComponent},
+// {path:'user',component:FormProfileListComponent},
 {path:'contact-form',component:ContactFormComponent},
 {path:'add-deduction-hdfc',component:CreateCustomerDeductionhdfcComponent},
 {path:'add-deduction-baroda',component:CreateCustomerDeductionbarodaComponent}
