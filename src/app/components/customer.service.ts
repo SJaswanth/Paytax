@@ -7,7 +7,7 @@ import { Customer } from './customer';
 })
 export class CustomerService {
 
-  private dbPath = '/Users/User_Details';
+  private dbPath = '/user/user_Details';
 
   customersRef: AngularFireList<Customer> = null;
 

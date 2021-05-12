@@ -1,6 +1,7 @@
 
+
 import { Injectable, NgZone } from '@angular/core';
-import { User } from "../services/user";
+import { user } from "../services/user";
 import firebase from 'firebase/app';
 import { AngularFireAuth } from "@angular/fire/auth";
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/firestore';
@@ -120,8 +121,8 @@ export class AuthService {
   sign up with username/password and sign in with social auth
   provider in Firestore database using AngularFirestore + AngularFirestoreDocument service */
   SetUserData(user: { uid: any; email: any; displayName: any; photoURL: any; emailVerified: any; }) {
-    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`users/${user.uid}`);
-    const userData: User = {
+    const userRef: AngularFirestoreDocument<any> = this.afs.doc(`user/${user.uid}`);
+    const userData: user = {
       uid: user.uid,
       email: user.email,
       displayName: user.displayName,
@@ -141,8 +142,9 @@ export class AuthService {
 
   // Sign out
   SignOut() {
-    return this.afAuth.signOut().then(() => {
-      localStorage.removeItem('user');
+    return this.afAuth.signOut()
+    .then(() => {
+      localStorage.clear();
       this.router.navigate(['sign-in']);
     })
   }
